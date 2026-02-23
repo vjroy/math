@@ -6,6 +6,14 @@ def bin2dec(n: int):
         j += 1
     return x
 
-print(bin2dec(1101))
-print(int("1101", 2))
+def dec2bin(n: int):
+    stack = []
+    x = ""
+    while n >= 1:
+        stack.append(n % 2)
+        n //= 2
+    while stack:
+        x += str(stack.pop())
+    return int(x)
+print(bin2dec(dec2bin(13)))
 
