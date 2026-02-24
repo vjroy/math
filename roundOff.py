@@ -19,4 +19,4 @@ print(a - b)
 print(a)
 
 c = math.nan
-print(c != c)
+print(c != c) #Prints True - Wow!
